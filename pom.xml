@@ -15,5 +15,6 @@
     <modules>
         <module>eugene-spring-boot-sample-simple</module>
         <module>eugene-spring-boot-sample-layout</module>
+        <module>eugene-spring-boot-sample-noparent</module>
     </modules>
 </project>

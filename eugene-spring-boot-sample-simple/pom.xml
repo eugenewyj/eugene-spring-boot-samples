@@ -11,6 +11,11 @@
     <artifactId>eugene-spring-boot-sample-simple</artifactId>
     <name>eugene-spring-boot-sample-simple</name>
 
+    <properties>
+        <java.version>1.8</java.version>
+        <snakeyaml.version>1.16</snakeyaml.version> <!-- 重新定义版本，支持的属性参考 spring-boot-dependencies pom -->
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

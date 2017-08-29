@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
+//@SpringBootApplication    /*相当于上面三个注释的默认配置*/
 public class Application {
 
     public static void main(String[] args) {
