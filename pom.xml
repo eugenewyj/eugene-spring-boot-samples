@@ -33,5 +33,6 @@
         <module>eugene-spring-boot-sample-layout</module>
         <module>eugene-spring-boot-sample-noparent</module>
         <module>eugene-spring-boot-sample-mybatis</module>
+        <module>eugene-spring-boot-sample-plugin</module>
     </modules>
 </project>

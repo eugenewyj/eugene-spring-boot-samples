@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>eugene-spring-boot-sample-base</artifactId>
-    <name>eugene-spring-boot-sample-base</name>
-    <description>一些spring mybatis等用到的基础技术示例代码</description>
+    <artifactId>eugene-spring-boot-sample-plugin</artifactId>
+    <name>eugene-spring-boot-sample-plugin</name>
+    <description>mybatis插件示例</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -18,8 +18,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.javassist</groupId>
-            <artifactId>javassist</artifactId>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.5</version>
         </dependency>
     </dependencies>
 </project>
