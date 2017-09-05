@@ -8,10 +8,10 @@
         <version>1.5.6.RELEASE</version>
     </parent>
     <groupId>org.eugenewyj</groupId>
-    <artifactId>eugene-spring-boot-samples</artifactId>
+    <artifactId>eugene-webapp-samples</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>eugene-spring-boot-samples</name>
+    <name>eugene-webapp-samples</name>
 
     <properties>
         <mybatis-spring-boot.version>1.3.1</mybatis-spring-boot.version>
@@ -28,11 +28,11 @@
     </dependencyManagement>
     
     <modules>
-        <module>eugene-spring-boot-sample-base</module>
-        <module>eugene-spring-boot-sample-simple</module>
-        <module>eugene-spring-boot-sample-layout</module>
-        <module>eugene-spring-boot-sample-noparent</module>
-        <module>eugene-spring-boot-sample-mybatis</module>
-        <module>eugene-spring-boot-sample-plugin</module>
+        <module>eugene-sample-base</module>
+        <module>eugene-sample-mybatis</module>
+        <module>eugene-sample-spring-boot-simple</module>
+        <module>eugene-sample-spring-boot-layout</module>
+        <module>eugene-sample-spring-boot-noparent</module>
+        <module>eugene-sample-spring-boot-mybatis</module>
     </modules>
 </project>
