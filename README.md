@@ -1,2 +1,2 @@
-# eugene-spring-boot-samples
-spring boot 学习样例程序
+# eugene-webapp-samples
+webapp学习样例程序
