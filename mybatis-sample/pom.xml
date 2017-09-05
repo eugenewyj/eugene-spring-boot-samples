@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.eugenewyj</groupId>
-        <artifactId>eugene-spring-boot-samples</artifactId>
+        <artifactId>eugene-webapp-samples</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>eugene-sample-mybatis</artifactId>
-    <name>eugene-sample-mybatis</name>
+    <artifactId>mybatis-sample</artifactId>
+    <name>mybatis-sample</name>
     <description>mybatis扩展示例，比如插件等</description>
 
     <properties>

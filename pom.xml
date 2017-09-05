@@ -28,11 +28,11 @@
     </dependencyManagement>
     
     <modules>
-        <module>eugene-sample-base</module>
-        <module>eugene-sample-mybatis</module>
-        <module>eugene-sample-spring-boot-simple</module>
-        <module>eugene-sample-spring-boot-layout</module>
-        <module>eugene-sample-spring-boot-noparent</module>
-        <module>eugene-sample-spring-boot-mybatis</module>
+        <module>base-sample</module>
+        <module>mybatis-sample</module>
+        <module>spring-boot-simple</module>
+        <module>spring-boot-layout</module>
+        <module>spring-boot-noparent</module>
+        <module>spring-boot-mybatis</module>
     </modules>
 </project>
