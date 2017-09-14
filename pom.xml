@@ -34,5 +34,6 @@
         <module>spring-boot-layout</module>
         <module>spring-boot-noparent</module>
         <module>spring-boot-mybatis</module>
+        <module>spring-mvc-sample</module>
     </modules>
 </project>
