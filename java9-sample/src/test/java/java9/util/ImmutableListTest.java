@@ -44,7 +44,7 @@ public class ImmutableListTest {
     @Test
     public void testImmutableListNullAttempts() {
         Assertions.assertThrows(NullPointerException.class, () -> {
-            List<String> stringList = List.of(null);
+            List.of(null);
         });
     }
 
