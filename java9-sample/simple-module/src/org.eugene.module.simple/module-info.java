@@ -1,3 +1,3 @@
-module org.eguene.module.simple {
+module org.eugene.module.simple {
 
 }
