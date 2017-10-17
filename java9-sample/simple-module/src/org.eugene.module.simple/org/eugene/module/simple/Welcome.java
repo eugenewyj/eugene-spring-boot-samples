@@ -1,4 +1,4 @@
-package com.eugene.java.module.one;
+package org.eugene.module.simple;
 
 public class Welcome {
     public static void main(String[] args) {

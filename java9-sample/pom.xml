@@ -10,12 +10,11 @@
 
     <artifactId>java9-sample</artifactId>
     <name>java9-sample</name>
+    <packaging>pom</packaging>
     <description>Java9示例代码</description>
 
     <properties>
         <java.version>9</java.version>
-
-        <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
     </properties>
 
     <dependencies>
@@ -28,4 +27,5 @@
             <artifactId>junit-jupiter-api</artifactId>
         </dependency>
     </dependencies>
+
 </project>
