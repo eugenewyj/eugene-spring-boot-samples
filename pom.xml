@@ -39,6 +39,11 @@
         <module>java9-sample/mod-reflect-test</module>
         <module>java9-sample/mod-unnamed-test</module>
         <module>java9-sample/mod-unnamed</module>
+        <module>java9-sample/service-prime</module>
+        <module>java9-sample/service-prime-generic</module>
+        <module>java9-sample/service-prime-client</module>
+        <module>java9-sample/service-prime-faster</module>
+        <module>java9-sample/service-prime-probable</module>
         <module>mybatis-sample</module>
         <module>spring-boot-simple</module>
         <module>spring-boot-layout</module>
