@@ -31,19 +31,7 @@
     
     <modules>
         <module>base-sample</module>
-        <module>java9-sample/mod-simple</module>
-        <module>java9-sample/mod-address</module>
-        <module>java9-sample/mod-person</module>
-        <module>java9-sample/mod-person-test</module>
-        <module>java9-sample/mod-reflect</module>
-        <module>java9-sample/mod-reflect-test</module>
-        <module>java9-sample/mod-unnamed-test</module>
-        <module>java9-sample/mod-unnamed</module>
-        <module>java9-sample/service-prime</module>
-        <module>java9-sample/service-prime-generic</module>
-        <module>java9-sample/service-prime-client</module>
-        <module>java9-sample/service-prime-faster</module>
-        <module>java9-sample/service-prime-probable</module>
+        <module>java9-sample</module>
         <module>mybatis-sample</module>
         <module>spring-boot-simple</module>
         <module>spring-boot-layout</module>

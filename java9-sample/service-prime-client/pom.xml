@@ -6,9 +6,8 @@
 
     <parent>
         <groupId>org.eugenewyj</groupId>
-        <artifactId>eugene-webapp-samples</artifactId>
+        <artifactId>java9-sample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../</relativePath>
     </parent>
 
     <artifactId>service-prime-client</artifactId>
