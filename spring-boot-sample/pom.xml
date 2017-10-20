@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.eugenewyj</groupId>
+        <artifactId>eugene-webapp-samples</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+
+    <groupId>org.eugenewyj</groupId>
+    <artifactId>spring-boot-sample</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>spring-boot-sample</name>
+
+
+    <modules>
+        <module>spring-boot-simple</module>
+        <module>spring-boot-layout</module>
+        <module>spring-boot-noparent</module>
+        <module>spring-boot-mybatis</module>
+    </modules>
+</project>

@@ -33,10 +33,7 @@
         <module>base-sample</module>
         <module>java9-sample</module>
         <module>mybatis-sample</module>
-        <module>spring-boot-simple</module>
-        <module>spring-boot-layout</module>
-        <module>spring-boot-noparent</module>
-        <module>spring-boot-mybatis</module>
+        <module>spring-boot-sample</module>
         <module>spring-mvc-sample</module>
     </modules>
 </project>

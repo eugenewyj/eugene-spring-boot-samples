@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>                             <!---->
     <parent>
         <groupId>org.eugenewyj</groupId>
-        <artifactId>eugene-webapp-samples</artifactId>
+        <artifactId>spring-boot-sample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
