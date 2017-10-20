@@ -31,7 +31,7 @@
     
     <modules>
         <module>base-sample</module>
-        <module>java9-sample</module>
+        <module>java-sample</module>
         <module>mybatis-sample</module>
         <module>spring-boot-sample</module>
         <module>spring-mvc-sample</module>

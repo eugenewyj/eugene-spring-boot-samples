@@ -10,18 +10,10 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>service-prime-client</artifactId>
+    <artifactId>mrjar-jdk9</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.eugenewyj</groupId>
-            <artifactId>service-prime</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
-
     <build>
-        <sourceDirectory>src/main/org.eugene.service.prime.client</sourceDirectory>
+        <sourceDirectory>src/main/org.eugene.mrjar</sourceDirectory>
     </build>
 </project>

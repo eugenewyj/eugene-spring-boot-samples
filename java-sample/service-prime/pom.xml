@@ -6,7 +6,7 @@
 
     <parent>
         <groupId>org.eugenewyj</groupId>
-        <artifactId>java9-sample</artifactId>
+        <artifactId>java-sample</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 

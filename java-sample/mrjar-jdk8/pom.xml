@@ -10,18 +10,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>service-prime-client</artifactId>
+    <artifactId>mrjar-jdk8</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.eugenewyj</groupId>
-            <artifactId>service-prime</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
     <build>
-        <sourceDirectory>src/main/org.eugene.service.prime.client</sourceDirectory>
+        <sourceDirectory>src/main/org.eugene.mrjar</sourceDirectory>
     </build>
 </project>

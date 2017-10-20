@@ -11,7 +11,7 @@
         <relativePath>../</relativePath>
     </parent>
 
-    <artifactId>java9-sample</artifactId>
+    <artifactId>java-sample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -29,5 +29,7 @@
         <module>service-prime-client</module>
         <module>service-prime-faster</module>
         <module>service-prime-probable</module>
+        <module>mrjar-jdk8</module>
+        <module>mrjar-jdk9</module>
     </modules>
 </project>
