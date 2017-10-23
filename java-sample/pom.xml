@@ -24,12 +24,12 @@
         <module>mod-reflect-test</module>
         <module>mod-unnamed-test</module>
         <module>mod-unnamed</module>
-        <module>service-prime</module>
-        <module>service-prime-generic</module>
-        <module>service-prime-client</module>
-        <module>service-prime-faster</module>
-        <module>service-prime-probable</module>
-        <module>mrjar-jdk8</module>
-        <module>mrjar-jdk9</module>
+        <module>service/service-prime</module>
+        <module>service/service-prime-generic</module>
+        <module>service/service-prime-client</module>
+        <module>service/service-prime-faster</module>
+        <module>service/service-prime-probable</module>
+        <module>mrjar/mrjar-jdk8</module>
+        <module>mrjar/mrjar-jdk9</module>
     </modules>
 </project>

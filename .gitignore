@@ -21,3 +21,6 @@ buildNumber.properties
 # Java 9
 mods
 lib
+jmods
+jars
+exe*
