@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.eugenewyj</groupId>
+        <artifactId>eugene-webapp-samples</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+
+    <artifactId>java9-sample</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>mods/mod-simple</module>
+        <module>mods/mod-address</module>
+        <module>mods/mod-person</module>
+        <module>mods/mod-person-test</module>
+        <module>mods/mod-reflect</module>
+        <module>mods/mod-reflect-test</module>
+        <module>mods/mod-unnamed-test</module>
+        <module>mods/mod-unnamed</module>
+        <module>mods/mod-version</module>
+        <module>service/service-prime</module>
+        <module>service/service-prime-generic</module>
+        <module>service/service-prime-client</module>
+        <module>service/service-prime-faster</module>
+        <module>service/service-prime-probable</module>
+        <module>mrjar/mrjar-jdk8</module>
+        <module>mrjar/mrjar-jdk9</module>
+    </modules>
+</project>
