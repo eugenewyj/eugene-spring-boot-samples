@@ -19,7 +19,6 @@ buildNumber.properties
 .DS_Store
 
 # Java 9
-mods
 lib
 jmods
 jars
