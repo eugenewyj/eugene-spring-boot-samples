@@ -26,6 +26,7 @@
         <module>mods/mod-unnamed</module>
         <module>mods/mod-version</module>
         <module>mods/mod-intruder</module>
+        <module>mods/mod-info</module>
         <module>service/service-prime</module>
         <module>service/service-prime-generic</module>
         <module>service/service-prime-client</module>
