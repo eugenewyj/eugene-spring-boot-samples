@@ -49,3 +49,16 @@ echo -e "\033[31m 运行LoadingClass类，应该正常输出...... \033[0m"
 $JDK9_HOME/bin/java --module-path ${mod_dir}/target/classes:${mod_dir%/*/*}/service/service-prime/target/classes:${mod_dir%/*}/mod-simple/target/classes \
     --add-exports org.eugene.mod.simple/org.eugene.mod.simple=org.eugene.mod.info \
     --module org.eugene.mod.info/org.eugene.mod.info.LoadingClass
+
+## 运行FindingModule类
+echo -e "\033[31m 运行FindingModule类...... \033[0m"
+$JDK9_HOME/bin/java --module-path ${mod_dir}/target/classes:${mod_dir%/*/*}/service/service-prime/target/classes:${mod_dir%/*}/mod-simple/target/classes \
+    --add-exports org.eugene.mod.simple/org.eugene.mod.simple=org.eugene.mod.info \
+    --module org.eugene.mod.info/org.eugene.mod.info.FindingModule
+
+
+## 运行ReadingModuleContents类
+echo -e "\033[31m 运行ReadingModuleContents类...... \033[0m"
+$JDK9_HOME/bin/java --module-path ${mod_dir}/target/classes:${mod_dir%/*/*}/service/service-prime/target/classes:${mod_dir%/*}/mod-simple/target/classes \
+    --add-exports org.eugene.mod.simple/org.eugene.mod.simple=org.eugene.mod.info \
+    --module org.eugene.mod.info/org.eugene.mod.info.ReadingModuleContents

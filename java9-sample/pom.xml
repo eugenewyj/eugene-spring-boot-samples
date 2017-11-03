@@ -29,6 +29,8 @@
         <module>mods/mod-info</module>
         <module>mods/mod-info-test</module>
         <module>mods/mod-info-annotation</module>
+        <module>mods/mod-layer</module>
+        <module>mods/mod-layer-test</module>
         <module>service/service-prime</module>
         <module>service/service-prime-generic</module>
         <module>service/service-prime-client</module>
