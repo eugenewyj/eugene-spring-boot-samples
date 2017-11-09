@@ -35,6 +35,7 @@
         <module>mods/mod-collection</module>
         <module>mods/mod-http2</module>
         <module>mods/mod-stack-frame</module>
+        <module>mods/mod-stream</module>
         <module>service/service-prime</module>
         <module>service/service-prime-generic</module>
         <module>service/service-prime-client</module>
