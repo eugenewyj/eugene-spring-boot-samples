@@ -23,3 +23,6 @@ lib
 jmods
 jars
 exe*
+
+# 忽略logs
+logs

@@ -14,7 +14,7 @@ echo -e "\033[31m 编译org.eugene.mod.simple模块，并生成模块jar文件..
 mod_simple_dir=${intruder_dir%/*}/mod-simple
 cd $mod_simple_dir
 mvn clean compile
-jar --create --verbose --file $intruder_dir/jars/org.eugene.mod.simple.jar -C $mod_simple_dir/target/classes .
+$JDK9_HOME/bin/jar --create --verbose --file $intruder_dir/jars/org.eugene.mod.simple.jar -C $mod_simple_dir/target/classes .
 
 ## 编译org.eugene.mod.intruder模块代码（错误: 程序包 org.eugene.mod.simple 不可见)
 echo -e "\033[31m 编译org.eugene.mod.intruder模块，应该报错（程序包 org.eugene.mod.simple 不可见）...... \033[0m"

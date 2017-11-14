@@ -37,6 +37,7 @@
         <module>mods/mod-stack-frame</module>
         <module>mods/mod-stream</module>
         <module>mods/mod-streams</module>
+        <module>mods/mod-logger</module>
         <module>service/service-prime</module>
         <module>service/service-prime-generic</module>
         <module>service/service-prime-client</module>

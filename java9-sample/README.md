@@ -47,3 +47,18 @@ JDK 9在java.util.concurrent包中提供了与响应式流兼容的API，它在j
 
 Flow类封装了响应式流Java API。 由响应式流Java API指定的四个接口作为嵌套静态接口包含在Flow类中：Flow.Processor<T,R>，Flow.Publisher<T>，Flow.Subscriber<T>和Flow.Subscription。
 
+### 18 Streams API 更新
+
+Stream接口有四种新方法：dropWhile()），takeWhile()，ofNullable()和iterate()。对于有序流，dropWhile()方法返回流的元素，从指定predicate为true的起始处丢弃元素。对于无序流，dropWhile()方法的行为是非确定性的。它可以选择删除匹配predicate的任何元素子集。当前的实现从匹配元素开始丢弃匹配元素，直到找到不匹配的元素。 takeWhile()方法的工作方式与dropWhile()方法相同，只不过它从流的起始处返回匹配的元素，而丢弃其余的。如果元素为非空，则Nullable(T t)方法返回包含指定元素的单个元素的流。如果指定的元素为空，则返回一个空的流。新的iterate(T seed, Predicate<? super T> hasNext, UnaryOperator<T> next)方法允许使用初始种子值创建顺序（可能是无限）流，并迭代应用指定的下一个方法。当指定的hasNext的predicate返回false时，迭代停止。
+
+Collectors类在JDK 9中有两种新方法：filtering()和flatMapping()。 filtering()方法返回在收集元素之前应用过滤器的收集器。如果指定的predicate对于元素返回true，则会收集元素；否则，元素未被收集。 flatMapping()方法返回在收集元素之前应用扁平映射方法的收集器。指定的扁平映射方法被应用到流的每个元素，并且从扁平映射器返回的流的元素的累积。
+
+### 19 平台和JVM日志
+JDK 9已经对平台类（JDK类）和JVM组件的日志系统进行了大修。有一个新的API可以指定所选择的日志记录框架作为从平台类记录消息的日志后端。还有一个新的命令行选项，可让从所有JVM组件访问消息。
+
+平台日志API允许指定将由所有平台类用于记录其消息的自定义记录器。可以使用现有的日志记录框架，如Log4j作为记录器。该API由java.lang.System.LoggerFinder类和java.lang.System.Logger接口组成。
+
+System.Logger接口的实例代表平台记录器。 System.LogFinder类是一个服务接口。需要为此服务接口提供一个实现，该接口返回System.Logger接口的实例。可以使用java.lang.System类中的getLogger()方法获取System.Logger。应用程序中的一个模块必须包含一个表示System.LogFinder服务接口实现的provides语句。否则，将使用默认记录器。
+
+JDK 9允许使用-Xlog的单个选项从所有组件记录所有JVM消息。该选项允许指定消息的类型，消息的严重程度级别，日志目标，记录消息的装饰和日志文件属性。消息由一组标签标识。System.Logger.Level枚举的常量指定消息的严重程度级别。日志目标可以是stdout，stderr或一个文件。
+
