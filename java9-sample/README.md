@@ -62,3 +62,36 @@ System.Logger接口的实例代表平台记录器。 System.LogFinder类是一�
 
 JDK 9允许使用-Xlog的单个选项从所有组件记录所有JVM消息。该选项允许指定消息的类型，消息的严重程度级别，日志目标，记录消息的装饰和日志文件属性。消息由一组标签标识。System.Logger.Level枚举的常量指定消息的严重程度级别。日志目标可以是stdout，stderr或一个文件。
 
+### 20 JDK 9 中API层次的改变
+在JDK 9中，下划线（_）是一个关键字，不能将其本身用作单字符标识符，例如变量名称，方法名称，类型名称等。但是，仍然可以使用下划线多个字符的标识符名称。
+
+JDK 9删除了限制，必须使用try-with-resource块为要管理的资源声明新变量。现在，可以使用final或有效的final变量来引用资源由try-with-resources块来管理。
+
+只要推断的类型是可表示的，JDK 9就添加了对匿名类中的钻石操作符的支持。
+
+可以在接口中具有非抽象非默认实例方法或静态方法的私有方法。
+
+JDK 9允许在私有方法上使用@SafeVarargs注解。 JDK 8已经允许它在构造方法，stati方法和final`方法上。
+
+JDK 9向ProcessBuilder.Redirect嵌套类添加了DISCARD的新常量。它的类型是ProcessBuilder.Redirect。当要丢弃输出时，可以将其用作子进程的输出和错误流的目标。实现通过写入操作系统特定的“空文件”来丢弃输出。
+
+JDK 9为Math和StrictMath类添加了几种方法来支持更多的数学运算，如floorDiv(long x, int y)，floorMod(long x, int y)，multiplyExact(long x, int y)，multiplyFull(int x, int y)，multiplyHigh(long x, long y) 等。
+
+JDK 9向java.util.Optional类添加了三个方法：ifPresentOrElse()，of()和stream()。 ifPresentOrElse()方法可以提供两个备选的操作。如果存在值，则执行一个操作。否则，它执行另一个操作。如果存在值，则or()方法返回Optional。否则返回指定Supplier返回的可选项。 stream()方法返回包含可选中存在的值的元素的顺序流。如果Optional为空，则返回一个空的流。 stream()方法在扁平映射中（flat maps）很有用。
+
+JDK 9向Thread类添加了一个新的静态onSpinWai()方法。对处理器来说，这是一个纯粹的提示，即调用者线程暂时无法继续，因此可以优化资源使用。在自旋循环中使用它。
+
+Time API在JDK 9中得到了一个提升。在Duration，LocalDate，LocalTime和OffsetTime类中添加了几种方法。LocalDate类接收到一个新的datesUntil()方法，它返回两个日期之间的日期流，以一天或给定期间的增量。 Time API中有几个新的格式化符号。
+
+Matcher类新增几个现有方法的重载版本，它们用于与StringBuffer一起工作，以支持使用StringBuilder。一个为results()的新方法返回一个Stream<MatchResult>。 Objects类收到了几个新的实用方法来检查数组和集合的范围。
+
+ava.util.Arrays新增了几种方法，可以比较数组和部分数组的相等性和不匹配性。
+
+Javadoc在JDK 9中得到了增强。它支持HTML5。可以使用一个新的选项-html5与javadoc工具一起生成HTML5格式的Javadoc。对所有模块，包，类型，成员和形式参数类型的名称进行索引，并使用新的搜索功能进行搜索。 Javadoc在每个主页的右上角显示一个搜索框，可用于搜索索引条款。还可以在Javadoc中使用一个新的标签@index来创建用户定义的术语。使用客户端JavaScript执行搜索，并且不进行服务器通信。
+
+许多浏览器供应商已经删除了对Java浏览器插件的支持，或者将在不久的将来删除它。记住这一点，JDK 9不赞成使用Applet API。 java.applet包和javax.swing.JApplet类中的所有类型已被弃用。 appletviewer工具也已被弃用。
+
+JDK 6通过java.awt.Desktop类添加了对平台特定桌面功能的有限支持，例如在用户默认浏览器中打开URI，在用户默认邮件客户端中打开mailto URI，以及使用注册的应用打开，编辑和打印文件。如果Java SE 9在当前平台上可用，许多系统和应用程序事件通知都会提供特定于平台的桌面支持，并为其添加了公共API支持。为了支持这么多新的桌面功能，Java SE 9向java.desktop模块添加了一个新的包java.awt.desktop。 java.awt.Desktop类也增加了很多新的方法。在JDK 9中，Desktop API支持24个平台特定的桌面操作和通知，例如当附加的显示进入或退出节电模式，系统进入睡眠模式或系统唤醒后的通知等。
+为了解决反序列化带来的安全风险，JDK 9引入了一个对象输入过滤器的概念，可以用来验证被反序列化的对象，如果没有通过测试，则可以停止反序列化过程。对象输入过滤器是新接口java.io.ObjectInputFilter的实例。可以指定可以在反序列化任何对象时使用的全系统全局过滤器。可以使用新的jdk.serialFilter系统属性，使用JAVA_HOME\conf\security\java.security文件中jdk.serialFilter的属性，或使用ObjectInputFilter.Config类的setSerialFilter()方法来指定全局过滤器。可以使用其setObjectInputFilter()方法在ObjectInputStream上设置本地过滤器，该方法将覆盖全局过滤器。
+
+java.io.InputStream类新增一个称为transferTo(OutputStream out)的方法，可用于从输入流读取所有字节，并将它们顺序写入指定的输出流。该方法不关闭任一流。 java.nio.Buffer类接收到两个方法，duplicate()和slice()——可用于复制和拼接缓冲区。复制和分片缓冲区与原始缓冲区共享其内容。但是他们保持自己的位置，限定和标记，独立于原始缓冲区。
